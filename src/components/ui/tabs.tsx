@@ -39,9 +39,20 @@ export const Tabs = ({
 
   return (
     <>
+      {/* <div className="max-w-7xl mx-auto my-28 px-4 md:px-8 lg:px-10">
+        <h2 className="text-4xl md:text-6xl mb-4 text-white max-w-full text-center">
+        
+            Some of My Work
+         
+        </h2>
+        <p className="text-neutral-300 text-1xl text-center md:text-base max-w-full">
+          Maids table how learn drift but purse stand yet set. Music me house
+          could among oh as their.
+        </p>
+      </div> */}
       <div
         className={cn(
-          "flex flex-row items-center justify-start text-purple-800 [perspective:1000px] relative overflow-auto sm:overflow-visible no-visible-scrollbar max-w-full w-full",
+          "flex flex-row items-center justify-center text-purple-800 [perspective:1000px] relative overflow-auto sm:overflow-visible no-visible-scrollbar max-w-full w-full",
           containerClassName
         )}
       >
@@ -66,18 +77,21 @@ export const Tabs = ({
                 layoutId="clickedbutton"
                 transition={{ type: "spring", bounce: 0.3, duration: 0.6 }}
                 className={cn(
-                  "absolute inset-0 bg-gray-200 text-red-700 dark:bg-zinc-800 rounded-full ",
+                  "inset-0 bg-gray-200 text-red-700 dark:bg-zinc-800 rounded-full ",
                   activeTabClassName
                 )}
               />
             )}
 
-            <span className="relative block text-fuchsia-700">{tab.title}</span>
+            <span className="relative justify-center items-center text-[#B38E58] flex font-semibold text-sm md:text-xl">
+              {tab.title}
+            </span>
           </button>
         ))}
       </div>
       {/* Pass the correct category prop to GalleryReact */}
-      <GalleryReact catogory={active.category} />
+
+      {/* <GalleryReact category1={active.value} /> */}
 
       <FadeInDiv
         tabs={tabs}
@@ -120,7 +134,7 @@ export const FadeInDiv = ({
             y: isActive(tab) ? [0, 40, 0] : 0,
           }}
           className={cn(
-            "w-full text-green-900 h-full absolute top-0 left-0",
+            "w-full text-green-900 h-full top-0 left-0",
             className
           )}
         />

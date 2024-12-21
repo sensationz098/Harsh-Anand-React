@@ -1,3 +1,4 @@
+"use client";
 import { cn } from "./../../lib/utils";
 import { motion, AnimatePresence } from "framer-motion";
 import React, { useEffect, useState } from "react";
@@ -99,14 +100,14 @@ export const ImagesSlider = ({
     },
     upExit: {
       opacity: 1,
-      x: "150%",
+      x: "-150%",
       transition: {
         duration: 1,
       },
     },
     downExit: {
       opacity: 1,
-      x: "-150%",
+      x: "150%",
       transition: {
         duration: 1,
       },
@@ -127,7 +128,9 @@ export const ImagesSlider = ({
     >
       {areImagesLoaded && children}
       {areImagesLoaded && overlay && (
-        <div className={cn("absolute inset-0 z-40", overlayClassName)} />
+        <div
+          className={cn("absolute inset-0  z-40", overlayClassName)}
+        />
       )}
 
       {areImagesLoaded && (
@@ -140,7 +143,6 @@ export const ImagesSlider = ({
             exit={direction === "up" ? "upExit" : "downExit"}
             variants={slideVariants}
             className="image h-full w-full absolute inset-0 object-cover object-center"
-            loading="lazy"
           />
         </AnimatePresence>
       )}

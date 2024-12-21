@@ -22,10 +22,7 @@ export function ImagesSliderDemo() {
         className="z-50 flex flex-col justify-center items-center"
       >
         
-        {/* <img src="pic-2.png" alt="pic" /> */}
-        {/* <motion.p className="font-bold text-xl md:text-6xl text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 py-4">
-          The hero section slideshow <br /> nobody asked for
-        </motion.p> */}
+       
         
       </motion.div>
     </ImagesSlider>

@@ -17,7 +17,7 @@ export function TabsDemo() {
     },
     {
       title: "music",
-      value: "music",
+      value: "music-videos",
       image: "music1.jpg",
     },
     {
@@ -48,7 +48,7 @@ export function TabsDemo() {
   ];
 
   return (
-    <div className="h-[20rem] md:h-[40rem] text-yellow-400 [perspective:1000px] relative b flex flex-col max-w-5xl mx-auto w-full  items-start justify-start my-40">
+    <div className="h-[20rem] md:h-auto bg-black text-yellow-400 [perspective:1000px] relative b flex flex-col max-w-5xl mx-auto mb-56 w-full  items-start justify-start ">
       <Tabs tabs={tabs} />
     </div>
   );
