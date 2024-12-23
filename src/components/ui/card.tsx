@@ -13,7 +13,7 @@ const Card = ({data}:{data:cardprops}) => {
   return (
     <div className="relative max-w-sm bg-[#0A0A0A] border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
       <a href={data.link}>
-       <span className="text-red-600 bg-slate-100">{data.image}</span>
+     
           <img
             className="rounded-t-lg"
             src={data.image}

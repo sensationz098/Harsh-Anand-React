@@ -15,7 +15,7 @@ import { Element } from "react-scroll";
 
 function App() {
   return (
-    <div className="container mx-auto p-2 bg-purple-700">
+    <div className="w-full">
       <Element name="home">
         <BackgroundBeamsDemo />
       </Element>
@@ -58,9 +58,7 @@ function App() {
           <TextHoverEffect text=" BRAND" />
         </div>
 
-        <div className="h-full w-full hidden md:block">
-          <text className="">BRAND</text>
-        </div>
+     
         <RootLayout>
           <div className="flex justify-center md:flex-row flex-col gap-4 w-full h-auto px-6 mx-auto">
             {data.map((elem) => {
