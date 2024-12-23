@@ -38,10 +38,10 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
       ref={containerRef}
     >
       <div className="max-w-7xl mx-auto py-20 px-4 md:px-8 lg:px-10">
-        <h2 className="text-lg md:text-5xl mb-4 text-white max-w-full text-center">
+        <h2 className="text-4xl md:text-5xl mb-4 text-white max-w-full text-center">
           Work Experience
         </h2>
-        <p className="text-neutral-300 text-2xl text-center md:text-base max-w-full">
+        <p className="text-neutral-300 md:text-2xl text-center text-xs max-w-full">
           Explore my journey of becoming a filmmaker and entrepreneur, weaving
           stories that entertain, inspire, and spark change
         </p>
@@ -49,7 +49,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
 
       <div
         ref={ref}
-        className="relative flex flex-col items-center justify-center pl-64 max-w-full  mx-auto pb-20"
+        className="relative flex flex-col items-center justify-center md:pl-64 max-w-full  mx-auto pb-20"
       >
         {data.map((item, index) => (
           <div

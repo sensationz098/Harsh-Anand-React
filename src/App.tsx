@@ -58,7 +58,10 @@ function App() {
           <TextHoverEffect text=" BRAND" />
         </div>
 
-     
+        <div className="h-full w-full block md:hidden">
+          <TextHoverEffect text=" BRAND" />
+        </div>
+
         <RootLayout>
           <div className="flex justify-center md:flex-row flex-col gap-4 w-full h-auto px-6 mx-auto">
             {data.map((elem) => {

@@ -14,11 +14,11 @@ export function TimelineDemo() {
             Built and launched Aceternity UI and Aceternity UI Pro from scratch
           </p> */}
           <div className="grid grid-cols-2 w-full gap-4">
-            <div className="bg-[#222121] flex flex-col justify-center items-center gap-7 w-[500px] rounded-lg h-64">
-              <h3 className="text-[#e9a847] font-semibold text-4xl text-center">
+            <div className="bg-[#222121] flex flex-col justify-center items-center md:gap-7 gap-3 md:w-[500px] w-[250px] rounded-lg md:h-64 py-5 md:py-0">
+              <h3 className="text-[#e9a847] font-semibold md:text-4xl  text-xl text-center">
                 Venus Records & Tapes Pvt. Ltd.
               </h3>
-              <p className="text-neutral-200  text-xl text-center">
+              <p className="text-neutral-200  text-xs text-center">
                 Worked as Director in various Music videos of singers like Altaf
                 Raja & Udit Narayan
               </p>
@@ -36,11 +36,11 @@ export function TimelineDemo() {
             Built and launched Aceternity UI and Aceternity UI Pro from scratch
           </p> */}
           <div className="grid grid-cols-2 gap-4">
-            <div className="bg-[#222121] flex flex-col justify-center items-center gap-7 w-[500px] rounded-lg h-64">
-              <h3 className="text-[#e9a847] font-semibold text-4xl text-center ">
+            <div className="bg-[#222121] flex flex-col justify-center items-center md:gap-7 gap-3 md:w-[500px] w-[250px] rounded-lg md:h-64 py-5 md:py-0">
+              <h3 className="text-[#e9a847] font-semibold md:text-4xl  text-xl text-center">
                 Balaji Telefilms Pvt. Ltd.
               </h3>
-              <p className="text-neutral-200  text-xl text-center">
+              <p className="text-neutral-200  text-xs text-center">
                 Worked as Director in various Music videos of singers like Altaf
                 Raja & Udit Narayan
               </p>
@@ -58,11 +58,11 @@ export function TimelineDemo() {
             Built and launched Aceternity UI and Aceternity UI Pro from scratch
           </p> */}
           <div className="grid grid-cols-2 gap-4">
-            <div className="bg-[#222121] flex flex-col justify-center items-center gap-7 w-[500px] rounded-lg h-64">
-              <h3 className="text-[#e9a847] font-semibold text-4xl text-center">
+            <div className="bg-[#222121] flex flex-col justify-center items-center md:gap-7 gap-3 md:w-[500px] w-[250px] rounded-lg md:h-64 py-5 md:py-0">
+              <h3 className="text-[#e9a847] font-semibold md:text-4xl  text-xl text-center">
                 Jai Mehta Productions
               </h3>
-              <p className="text-neutral-200  text-xl text-center">
+              <p className="text-neutral-200  text-xs text-center">
                 Worked as Director in various Music videos of singers like Altaf
                 Raja & Udit Narayan
               </p>
@@ -80,11 +80,11 @@ export function TimelineDemo() {
             Built and launched Aceternity UI and Aceternity UI Pro from scratch
           </p> */}
           <div className="grid grid-cols-2 gap-4">
-            <div className="bg-[#222121] flex flex-col justify-center items-center gap-7 w-[500px] rounded-lg h-64">
-              <h3 className="text-[#e9a847] font-semibold text-4xl text-center">
+            <div className="bg-[#222121] flex flex-col justify-center items-center md:gap-7 gap-3 md:w-[500px] w-[250px] rounded-lg md:h-64 py-5 md:py-0">
+              <h3 className="text-[#e9a847] font-semibold md:text-4xl  text-xl text-center">
                 Sensationz Media & Arts Pvt. Ltd.
               </h3>
-              <p className="text-neutral-200  text-xl text-center">
+              <p className="text-neutral-200  text-xs text-center">
                 Worked as Director in various Music videos of singers like Altaf
                 Raja & Udit Narayan
               </p>
