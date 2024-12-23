@@ -67,7 +67,7 @@ export function FocusCards({ cards }: { cards: Card[] }) {
   return (
     <div>
       {/* Grid Layout for cards - responsive */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-7xl mx-auto md:px-8 w-full">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-full mx-auto md:px-3 w-full">
         {cards.map((card, index) => (
           <div key={card.title} className="cursor-pointer">
             <button

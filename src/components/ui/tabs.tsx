@@ -8,7 +8,7 @@ type Tab = {
   title: string;
   value: string;
   image: string;
-  category: string; // Add category property to the Tab type
+  // category: string; // Add category property to the Tab type
 };
 
 export const Tabs = ({
@@ -39,20 +39,18 @@ export const Tabs = ({
 
   return (
     <>
-      {/* <div className="max-w-7xl mx-auto my-28 px-4 md:px-8 lg:px-10">
+      <div className="max-w-7xl mx-auto my-28 px-4 md:px-8 lg:px-10">
         <h2 className="text-4xl md:text-6xl mb-4 text-white max-w-full text-center">
-        
-            Some of My Work
-         
+          Some of My Work
         </h2>
         <p className="text-neutral-300 text-1xl text-center md:text-base max-w-full">
           Maids table how learn drift but purse stand yet set. Music me house
           could among oh as their.
         </p>
-      </div> */}
+      </div>
       <div
         className={cn(
-          "flex flex-row items-center justify-center text-purple-800 [perspective:1000px] relative overflow-auto sm:overflow-visible no-visible-scrollbar max-w-full w-full",
+          "md:flex md:flex-row grid grid-rows-3 grid-cols-3 items-center justify-center text-purple-800 [perspective:1000px] relative overflow-auto sm:overflow-visible no-visible-scrollbar max-w-full w-full",
           containerClassName
         )}
       >
@@ -83,7 +81,7 @@ export const Tabs = ({
               />
             )}
 
-            <span className="relative justify-center items-center text-[#B38E58] flex font-semibold text-sm md:text-xl">
+            <span className="relative justify-center items-center text-[#B38E58] md:flex font-semibold text-sm md:text-xl  ">
               {tab.title}
             </span>
           </button>
@@ -91,7 +89,7 @@ export const Tabs = ({
       </div>
       {/* Pass the correct category prop to GalleryReact */}
 
-      {/* <GalleryReact category1={active.value} /> */}
+      <GalleryReact category1={active.value} />
 
       <FadeInDiv
         tabs={tabs}
@@ -118,27 +116,5 @@ export const FadeInDiv = ({
     return tab.value === active.value;
   };
 
-  return (
-    <div className="relative w-full h-full text-red-600">
-      {tabs.map((tab, idx) => (
-        <motion.div
-          key={tab.value}
-          layoutId={tab.value}
-          style={{
-            scale: 1 - idx * 0.1,
-            top: hovering ? idx * -50 : 0,
-            zIndex: -idx,
-            opacity: idx < 3 ? 1 - idx * 0.1 : 0,
-          }}
-          animate={{
-            y: isActive(tab) ? [0, 40, 0] : 0,
-          }}
-          className={cn(
-            "w-full text-green-900 h-full top-0 left-0",
-            className
-          )}
-        />
-      ))}
-    </div>
-  );
+  
 };

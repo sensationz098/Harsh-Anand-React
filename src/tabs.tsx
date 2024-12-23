@@ -48,7 +48,7 @@ export function TabsDemo() {
   ];
 
   return (
-    <div className="h-[20rem] md:h-auto bg-black text-yellow-400 [perspective:1000px] relative b flex flex-col max-w-5xl mx-auto mb-56 w-full  items-start justify-start ">
+    <div className="h-auto md:h-auto bg-black text-yellow-400 [perspective:1000px] relative b flex flex-col max-w-5xl mx-auto mb-56 w-full  items-start justify-start ">
       <Tabs tabs={tabs} />
     </div>
   );

@@ -34,21 +34,22 @@ const GalleryReact: React.FC<GalleryReactProps> = ({ category1 }) => {
   }, [category1]);
 
   // Dynamically determine the grid layout based on the category
-  const gridClass = category1 === "all" ? "grid-rows-4" : "grid-rows-1";
+  const gridClass = category1 === "all" ? "grid-rows-3" : "grid-rows-1";
 
   return (
     <div className="container-fluid w-full  mt-4 md:mx-auto bg-fuchsia-600 h-auto text-white">
-      <div className={`grid ${gridClass} bg-black grid-cols-3 h-auto gap-4`}>
+      <div
+        className={`grid ${gridClass} bg-black grid-cols-1 md:grid-cols-3 h-auto gap-4`}
+      >
         {items.map((item) => (
           <div key={item.id} className="card mb-3">
-            <div className="flex">
+            <div className="flex justify-center">
               <div className="col-md-5">
                 {/* Use LazyLoadImage for optimized image loading */}
                 <LazyLoadImage
                   src={item.image}
                   alt={item.category1}
                   className="img-fluid rounded-2xl"
-                  
                 />
               </div>
             </div>

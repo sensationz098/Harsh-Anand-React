@@ -15,3 +15,7 @@ body{
 .no-visible-scrollbar::-webkit-scrollbar {
   display: none;
 }
+.react-images__view.react-images__view--isModal.css-1qrom1v.css-1ycyyax{
+  display: flex;
+  justify-content: center;
+}

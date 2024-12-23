@@ -31,7 +31,7 @@ export const TextHoverEffect = ({
     <svg
       ref={svgRef}
       width="100%"
-      height="100%"
+      height="10%"
       viewBox="0 0 300 100"
       xmlns="http://www.w3.org/2000/svg"
       onMouseEnter={() => setHovered(true)}
@@ -92,7 +92,7 @@ export const TextHoverEffect = ({
         textAnchor="middle"
         dominantBaseline="middle"
         strokeWidth="0.3"
-        className="font-[helvetica] font-bold stroke-neutral-200 dark:stroke-neutral-800 fill-transparent text-2xl  "
+        className="font-[helvetica] font-bold stroke-neutral-200 dark:stroke-neutral-800 fill-transparent text-xl  "
         style={{ opacity: hovered ? 0 : 0 }}
       >
         {text}
@@ -103,7 +103,7 @@ export const TextHoverEffect = ({
         textAnchor="middle"
         dominantBaseline="middle"
         strokeWidth="0.3"
-        className="font-[helvetica] font-bold fill-transparent text-2xl   stroke-neutral-800"
+        className="font-[helvetica] font-bold fill-transparent md:text-3xl text-7xl stroke-neutral-800"
         initial={{ strokeDashoffset: 1000, strokeDasharray: 1000 }}
         animate={{
           strokeDashoffset: 0,
@@ -127,6 +127,18 @@ export const TextHoverEffect = ({
         className="font-[helvetica] font-bold fill-transparent text-5xl  "
       >
         SENTIATIONZ
+      </text>
+      <text
+        x="50%"
+        y="50%"
+        textAnchor="middle"
+        dominantBaseline="middle"
+        stroke="url(#textGradient)"
+        strokeWidth="0.3"
+        mask="url(#textMask)"
+        className="font-[helvetica] font-bold  text-3xl  "
+      >
+        BRAND
       </text>
     </svg>
   );

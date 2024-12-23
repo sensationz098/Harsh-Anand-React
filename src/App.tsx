@@ -26,22 +26,22 @@ function App() {
         </div>
       </RootLayout>
 
-      <div className="w-full h-auto py-32 px-20 mx-auto bg-black" id="home">
+      <div className="w-full h-auto py-32 px-6 mx-auto bg-black" id="home">
         <Element name="about">
-          <FocusCardsDemo></FocusCardsDemo>
+          <FocusCardsDemo />
         </Element>
       </div>
 
-      {/* <div className="w-full h-auto bg-black z-20" id="experience">
+      <div className="w-full h-auto bg-black z-20" id="experience">
         <Element name="experience">
           <TimelineDemo />
         </Element>
-      </div> */}
+      </div>
 
       <RootLayout>
         <Element name="portfolio">
           <div
-            className="w-full h-auto bg-black z-20"
+            className="w-full h-auto bg-black z-20  px-6 mx-auto"
             id="portflio"
           >
             {/* <GalleryReact /> */}
@@ -54,14 +54,20 @@ function App() {
         className="w-full h-auto bg-[#0A0A0A] flex flex-col  z-20"
         id="portfolio"
       >
-        <TextHoverEffect text=" BRAND" />
+        <div className="h-full w-full hidden md:block">
+          <TextHoverEffect text=" BRAND" />
+        </div>
+
+        <div className="h-full w-full hidden md:block">
+          <text className="">BRAND</text>
+        </div>
         <RootLayout>
-          <div className="flex md:flex-row flex-col gap-4">
+          <div className="flex justify-center md:flex-row flex-col gap-4 w-full h-auto px-6 mx-auto">
             {data.map((elem) => {
               return (
                 <div className="col-sm-4" key={elem.id}>
                   <div className="card mb-3">
-                    <div className="flex">
+                    <div className="flex justify-center">
                       <div className="col-md-5">
                         <Card data={elem} />
                       </div>

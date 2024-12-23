@@ -31,16 +31,16 @@ export const LinkPreview = ({
   height = 125,
   quality = 50,
   layout = "fixed",
-  isStatic = false,
-  imageSrc = "",
+  // isStatic = false,
+  // imageSrc = "",
 }: LinkPreviewProps) => {
-  let src;
-  if (!isStatic) {
+  // let src;
+  // if (!isStatic) {
    
-    src = {url};
-  } else {
-    src = imageSrc;
-  }
+  //   src = {url};
+  // } else {
+  //   src = imageSrc;
+  // }
 
   const [isOpen, setOpen] = React.useState(false);
 

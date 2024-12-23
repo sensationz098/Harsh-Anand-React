@@ -1,6 +1,6 @@
 // import Image from "next/image";
 // import React from "react";
-import { small } from "framer-motion/client";
+// import { small } from "framer-motion/client";
 import { Timeline } from "./components/ui/timeline";
 
 export function TimelineDemo() {
