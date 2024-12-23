@@ -31,7 +31,7 @@ export function BackgroundBeamsDemo() {
         </div>
 
         {/* Right section (Image slider) */}
-        <div className="flex justify-center bg-red-500 w-full md:w-3/5 mt-8 md:mt-0">
+        <div className="flex justify-center w-full md:w-3/5 mt-8 md:mt-0">
           <ImagesSliderDemo />
         </div>
       </div>
