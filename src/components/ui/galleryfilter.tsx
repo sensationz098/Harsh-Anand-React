@@ -1,22 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import { Menu, MenuItem } from "../../constant";
+import { Link as ReactLink} from "react-router-dom";
 
-type MenuItem = {
-  id: number;
-  image: string;
-  category1: string;
-};
-
-// Static data outside of component to avoid unnecessary re-creation on each render
-const Menu: MenuItem[] = [
-  { id: 1, image: "1.png", category1: "ad-films" },
-  { id: 2, image: "music1.jpg", category1: "music-videos" },
-  { id: 3, image: "7.png", category1: "short-films" },
-  { id: 4, image: "web2.jpg", category1: "web-shows" },
-  { id: 5, image: "talk1.jpg", category1: "talk-shows" },
-  { id: 6, image: "docs-1.png", category1: "Documentaries" },
-  { id: 7, image: "movie1.jpg", category1: "movies" },
-];
 
 interface GalleryReactProps {
   category1: string;
@@ -46,11 +32,14 @@ const GalleryReact: React.FC<GalleryReactProps> = ({ category1 }) => {
             <div className="flex justify-center">
               <div className="col-md-5">
                 {/* Use LazyLoadImage for optimized image loading */}
+            <ReactLink to={`/${item.id}`}>
+
                 <LazyLoadImage
                   src={item.image}
                   alt={item.category1}
                   className="img-fluid rounded-2xl"
-                />
+                  />
+                  </ReactLink>
               </div>
             </div>
           </div>
