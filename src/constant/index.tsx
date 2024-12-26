@@ -4,7 +4,9 @@ export type MenuItem = {
   id: number;
   image: string;
   category1: string;
-  gallery: [];
+  gallery: string[];
+  heading: string,
+  content: string,
 };
 
 // Static data outside of component to avoid unnecessary re-creation on each render
@@ -12,44 +14,64 @@ export const Menu: MenuItem[] = [
   {
     id: 1,
     image: "1.png",
-    category1: "ad-films",
+    category1: "Ad Films",
     gallery: ["15.png", "16.png", "17.png", "18.png"],
+    heading: "Ad Films Directed by Me",
+    content:
+      "I have directed ad films that combine creativity with brand messaging to leave a lasting impact. My approach focuses on storytelling that resonates with audiences while aligning with the client’s vision. Through each project, I strive to create visually compelling and memorable advertisements.",
   },
   {
     id: 2,
     image: "music1.jpg",
-    category1: "music-videos",
+    category1: "Music Videos",
     gallery: ["1-1.jpg", "1.png", "2-1.jpg"],
+    heading: "Music Videos Directed by Me",
+    content:
+      "I have directed documentaries for CORD, including Bal Vihar, Disability, Social Injustice, and Changing Women Lives. Each project focuses on raising awareness about social challenges and the power of community-driven change. My goal is to spotlight inspiring stories that drive meaningful impact.",
   },
   {
     id: 3,
     image: "7.png",
-    category1: "short-films",
+    category1: "Short Films",
     gallery: ["1-1.jpg", "1.png", "2-1.jpg"],
+    heading: "Short Films Directed by Me",
+    content:
+      "Explore diverse human experiences with nuanced storytelling. *Avaidh* stars Hitesh Tejwani, while *A Night in a Lockdown* features Gulshan Pandey. *Deserved* with Manoj Bakshi and *Ab Yeh Hi Mera Ghar Hai* starring Banwari Lal Jhol delve into themes of identity, struggle, and acceptance.",
   },
   {
     id: 4,
     image: "web2.jpg",
-    category1: "web-shows",
+    category1: "web Shows",
     gallery: ["1-1.jpg", "1.png", "2-1.jpg"],
+    heading: "Web Series Directed by Me",
+    content:
+      "Directed web series like Love Lust Loyalty and Pre Wedding Honeymoon. My storytelling delves into the complexities of relationships, emotions, and personal journeys. I strive to create engaging narratives that connect with audiences more deeply.",
   },
   {
     id: 5,
     image: "talk1.jpg",
-    category1: "talk-shows",
+    category1: "Talk Shows",
     gallery: ["11.jpeg", "12.jpeg", "13.jpeg", "14.jpeg"],
+    heading: "Talk Shows Directed by Me",
+    content:
+      "I have directed talk shows that foster engaging conversations on diverse topics. I focus on creating dynamic content that resonates with audiences while highlighting thought-provoking insights. Each talk show aims to inspire dialogue and connect people through meaningful discussions.",
   },
   {
     id: 6,
     image: "docs-1.png",
     category1: "Documentaries",
     gallery: ["19.png", "20.png", "21.png", "22.png"],
+    heading: "Documentaries Directed by Me",
+    content: "I have directed documentaries for CORD, including Bal Vihar, Disability, Social Injustice, and Changing Women Lives. Each project focuses on raising awareness about social challenges and the power of community-driven change. My goal is to spotlight inspiring stories that drive meaningful impact.",
   },
   {
     id: 7,
     image: "movie1.jpg",
-    category1: "movies",
+    category1: "Movies",
     gallery: ["23.jpeg", "24.jpeg", "25.jpeg", "26.jped"],
+    heading: "Movies Directed by Me",
+    content:
+      "I directed the feature film Love and Rajniti starring Ravi Kishan. My work focuses on blending powerful storytelling with complex emotions and real-world themes. I strive to create impactful cinema that resonates with audiences on multiple levels.",
   },
 ];
 
