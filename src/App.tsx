@@ -53,36 +53,36 @@ function App() {
 
       <div
         className="w-full h-auto bg-[#0A0A0A] flex flex-col  z-20"
-        id="portfolio"
+        id="contact"
       >
-        <div className="h-full w-full hidden md:block">
-          <TextHoverEffect text=" BRAND" />
-        </div>
-        <div className="h-full w-full block md:hidden">
-          <TextHoverEffect text=" BRAND" />
-        </div>
-        <RootLayout>
-          <div className="flex justify-center md:flex-row flex-col gap-4 w-full h-auto px-6 mx-auto">
-            {data.map((elem) => {
-              return (
-                <div className="col-sm-4" key={elem.id}>
-                  <div className="card mb-3">
-                    <div className="flex justify-center">
-                      <div className="col-md-5">
-                        <Card data={elem} />
+        <Element name="contact">
+          <div className="h-full w-full hidden md:block">
+            <TextHoverEffect text=" BRAND" />
+          </div>
+          <div className="h-full w-full block md:hidden">
+            <TextHoverEffect text=" BRAND" />
+          </div>
+          <RootLayout>
+            <div className="flex justify-center md:flex-row flex-col gap-4 w-full h-auto px-6 mx-auto">
+              {data.map((elem) => {
+                return (
+                  <div className="col-sm-4" key={elem.id}>
+                    <div className="card mb-3">
+                      <div className="flex justify-center">
+                        <div className="col-md-5">
+                          <Card data={elem} />
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-              );
-            })}
+                );
+              })}
+            </div>
+          </RootLayout>
+          <div className="h-96 w-full bg-red-700">
+            <MainFooter />
           </div>
-        </RootLayout>
-        <div className="h-96 w-full bg-red-700">
-          <MainFooter />
-        </div>
-
-        
+        </Element>
       </div>
     </div>
   );
