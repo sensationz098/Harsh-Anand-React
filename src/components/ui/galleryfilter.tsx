@@ -12,8 +12,10 @@ const GalleryReact: React.FC<GalleryReactProps> = ({ category1 }) => {
   const [items, setItems] = useState<MenuItem[]>(Menu);
 
   useEffect(() => {
-    if (category1 === "all") {
-      setItems(Menu);
+    if (category1 === "All") {
+      const ab=Menu.slice(1,8);
+      console.log(ab);
+      setItems(ab);
     } else {
       setItems(Menu.filter((item) => item.category1 === category1));
     }

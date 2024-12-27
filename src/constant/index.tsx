@@ -12,6 +12,15 @@ export type MenuItem = {
 // Static data outside of component to avoid unnecessary re-creation on each render
 export const Menu: MenuItem[] = [
   {
+    id: 0,
+    image: "",
+    category1: "All",
+    gallery: [""],
+    heading: "",
+    content:
+      "",
+  },
+  {
     id: 1,
     image: "1.png",
     category1: "Ad Films",
@@ -51,7 +60,7 @@ export const Menu: MenuItem[] = [
     id: 4,
     image: "web2.jpg",
     category1: "web Shows",
-    gallery: ["112.jpg","web2.jpg"],
+    gallery: ["112.jpg", "web2.jpg"],
     heading: "Web Series Directed by Me",
     content:
       "Directed web series like Love Lust Loyalty and Pre Wedding Honeymoon. My storytelling delves into the complexities of relationships, emotions, and personal journeys. I strive to create engaging narratives that connect with audiences more deeply.",

@@ -2,8 +2,6 @@ import { BackgroundBeamsDemo } from "./backgroun";
 import { FocusCardsDemo } from "./gallery";
 import { TimelineDemo } from "./tracking-ball-section";
 // import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
-
-import {ParallaxProvider} from "react-scroll-parallax"; 
 import { TabsDemo } from "./tabs";
 import RootLayout from "./components/Root-Layout";
 import Card from "./components/ui/card";
@@ -12,7 +10,6 @@ import { TextHoverEffect } from "./components/ui/text-hover-effect";
 import { FloatingNav } from "./components/ui/floating-navbar";
 import { data, navItems } from "./constant";
 import { Element } from "react-scroll";
-import HeroSection from "./components/ui/HeroSection";
 // import {Footer} from "./components/ui/footer";
 // import { LinkPreview } from "./components/ui/link-preview";
 
