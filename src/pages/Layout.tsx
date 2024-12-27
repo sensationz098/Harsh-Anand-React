@@ -63,27 +63,28 @@ function Layout() {
         </ParallaxProvider>
       </div>
       <RootLayout>
-        <div
-          className={` mt-[800px] mx-auto px-7  w-full h-auto gap-4`}
-        >
+        <div className={`mt-[200px] md:mt-[800px] mx-auto px-7  w-full h-auto gap-4`}>
           <div className="flex justify-center">
-            <div className="h-52 w-96 my-auto object-cover">
+            <div className="h-52 w-96 my-auto object-cover md:block hidden">
               <img src="Face.png" alt="" />
             </div>
             <div className="flex flex-col justify-around items-center">
-              <h2 className="text-4xl font-bold text-white">
+              <h2 className="font-bold text-white md:text-4xl text-center text-2xl">
                 {user?.heading}
               </h2>
-              <p className="text-center text-xl font-medium text-white">
+              <div className="  my-auto object-cover md:hidden block">
+                <img className="h-36 w-full" src="Face.png" alt="" />
+              </div>
+              <p className="text-center text-xs md:text-xl font-medium text-white">
                 {user?.content}
               </p>
             </div>
-            <div className="h-52 w-96 my-auto object-cover">
+            <div className="h-52 w-96 my-auto object-cover md:block hidden">
               <img src="Face.png" alt="" />
             </div>
           </div>
 
-          <div className="grid grid-cols-2 grid-rows-2 gap-10 w-full">
+          <div className="grid grid-cols-1 md:grid-cols-2 md:mt-4 mt-10 grid-rows-2 gap-10 w-full">
             {user?.gallery.map((item) => (
               <div className="flex justify-center">
                 {/* Use LazyLoadImage for optimized image loading */}

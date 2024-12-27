@@ -1,29 +1,4 @@
-// import React from "react";
 
-// const HeroSection: React.FC = () => {
-//   return (
-//     <div className="h-full">
-//       {/* The hero image */}
-//       <div
-//         className="relative h-1/2 bg-cover bg-center bg-no-repeat"
-
-//       >
-
-//         <img src="1-1.jpg" alt="" />        {/* Hero text */}
-//         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white">
-//           <h1 className="text-4xl font-bold">I am John Doe</h1>
-//           <p className="text-xl mt-2">And I'm a Photographer</p>
-//           <button className="mt-4 px-6 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition-all">
-//             Hire me
-//           </button>
-//         </div>
-//       </div>
-//     </div>
-
-//   );
-// };
-
-// export default HeroSection;
 
 import React from "react";
 import { ParallaxBanner, BannerLayer } from "react-scroll-parallax";
@@ -53,7 +28,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ user }) => {
     expanded: false,
     children: (
       <div className="absolute inset-0 flex items-center justify-center">
-        <h1 className="text-6xl md:text-8xl font-bold text-white z-50 w3-animate-zoom">
+        <h1 className="text-3xl md:text-8xl font-bold text-white z-50 w3-animate-zoom">
           {user.category1}
         </h1>
       </div>
@@ -68,7 +43,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ user }) => {
     shouldAlwaysCompleteAnimation: true,
     expanded: false,
     children: (
-      <div className="absolute inset-0 bg-gradient-to-t from-gray-900 to-blue-900" />
+      <div className="absolute inset-0 bg-gradient-to-t from-gray-900 to-black" />
     ),
   };
 
