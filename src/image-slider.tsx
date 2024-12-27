@@ -6,7 +6,7 @@ import { ImagesSlider } from "./components/ui/images-slider";
 export function ImagesSliderDemo() {
   const images = ["pic-2.png", "pic1-1.png", "pic1.png"];
   return (
-    <ImagesSlider className="h-full w-96" images={images}>
+    <ImagesSlider className="md:h-full md:w-96 md:mt-0 mt-10 h-64 w-56 z-50" images={images}>
       <motion.div
         initial={{
           opacity: 0,

@@ -10,6 +10,7 @@ import { TextHoverEffect } from "./components/ui/text-hover-effect";
 import { FloatingNav } from "./components/ui/floating-navbar";
 import { data, navItems } from "./constant";
 import { Element } from "react-scroll";
+import { MainFooter } from "./components/ui/MainFooter";
 // import {Footer} from "./components/ui/footer";
 // import { LinkPreview } from "./components/ui/link-preview";
 
@@ -77,9 +78,11 @@ function App() {
             })}
           </div>
         </RootLayout>
+        <div className="h-96 w-full bg-red-700">
+          <MainFooter />
+        </div>
 
-      
-
+        
       </div>
     </div>
   );
