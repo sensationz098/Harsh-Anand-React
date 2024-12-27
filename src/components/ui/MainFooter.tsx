@@ -75,7 +75,7 @@ export function MainFooter() {
               </div>
             </div>
 
-            <div>
+            <div className="">
               <FloatingDockDemo/>
             </div>
           </div>

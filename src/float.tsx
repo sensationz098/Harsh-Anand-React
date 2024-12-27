@@ -1,76 +1,48 @@
 import React from "react";
 import { FloatingDock } from "./components/ui/floating-dock";
 import {
-  IconBrandGithub,
+  IconBrandInstagram,
   IconBrandX,
-  IconExchange,
-  IconHome,
-  IconNewSection,
-  IconTerminal2,
+  IconBrandLinkedin,
+  IconBrandFacebookFilled,
+  IconBrandYoutube,
 } from "@tabler/icons-react";
 
 
 export function FloatingDockDemo() {
   const links = [
     {
-      title: "Home",
+      title: "Youtube",
+      icon: <IconBrandYoutube className="h-full w-full text-neutral-300" />,
+      href: "https://www.youtube.com/@SensationzMediaArtsPvtLtd",
+    },
+    {
+      title: "Facebook",
       icon: (
-        <IconHome className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+        <IconBrandFacebookFilled className="h-full w-full text-neutral-300" />
       ),
-      href: "#",
+      href: "https://www.facebook.com/harsh.anand.5682/",
     },
 
     {
-      title: "Products",
-      icon: (
-        <IconTerminal2 className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-      ),
-      href: "#",
-    },
-    {
-      title: "Components",
-      icon: (
-        <IconNewSection className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-      ),
-      href: "#",
-    },
-    {
-      title: "Aceternity UI",
-      icon: (
-        <img
-          src="https://assets.aceternity.com/logo-dark.png"
-          width={20}
-          height={20}
-          alt="Aceternity Logo"
-        />
-      ),
-      href: "#",
-    },
-    {
-      title: "Changelog",
-      icon: (
-        <IconExchange className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-      ),
-      href: "#",
+      title: "Linkedin",
+      icon: <IconBrandLinkedin className="h-full w-full text-neutral-300" />,
+      href: "https://www.linkedin.com/in/harsh-anand-58438552/",
     },
 
     {
       title: "Twitter",
-      icon: (
-        <IconBrandX className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-      ),
-      href: "#",
+      icon: <IconBrandX className="h-full w-full text-neutral-300" />,
+      href: "https://x.com/sensationzmedia?s=09",
     },
     {
-      title: "GitHub",
-      icon: (
-        <IconBrandGithub className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-      ),
-      href: "#",
+      title: "Instagram",
+      icon: <IconBrandInstagram className="h-full w-full text-neutral-300" />,
+      href: "https://www.instagram.com/dialharsh/",
     },
   ];
   return (
-    <div className="flex items-center justify-center h-[35rem] w-full">
+    <div className="flex items-center justify-center h-fit w-full">
       <FloatingDock
         mobileClassName="translate-y-20" // only for demo, remove for production
         items={links}

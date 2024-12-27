@@ -70,9 +70,9 @@ const FloatingDockMobile = ({
       </AnimatePresence>
       <button
         onClick={toggleMenu}
-        className="h-10 w-10 rounded-full bg-neutral-800 flex items-center justify-center"
+        className="h-10 w-10 rounded-full bg-neutral-800 flex items-center justify-start"
       >
-        <IconLayoutNavbarCollapse className="h-5 w-5 text-neutral-400" />
+        <IconLayoutNavbarCollapse className="h-10 w-10 text-neutral-400" />
       </button>
     </div>
   );
@@ -98,7 +98,7 @@ const FloatingDockDesktop = ({
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
       className={cn(
-        "mx-auto hidden md:flex h-16 gap-4 items-end rounded-2xl bg-neutral-900 px-4 pb-3",
+        "mx-auto md:flex-start hidden md:flex h-16 gap-4 items-end rounded-2xl bg-black pb-3",
         className
       )}
     >
@@ -170,7 +170,7 @@ function IconContainer({
         style={{ width, height }}
         onMouseEnter={() => setHovered(true)}
         onMouseLeave={() => setHovered(false)}
-        className="aspect-square rounded-full bg-red-800 flex items-center justify-center relative"
+        className="aspect-square rounded-full flex items-center justify-start relative"
       >
         <AnimatePresence>
           {hovered && (
@@ -178,7 +178,7 @@ function IconContainer({
               initial={{ opacity: 0, y: 10, x: "-50%" }}
               animate={{ opacity: 1, y: 0, x: "-50%" }}
               exit={{ opacity: 0, y: 2, x: "-50%" }}
-              className="px-2 py-0.5 whitespace-pre rounded-md bg-neutral-800 border-neutral-900 text-white absolute left-1/2 -translate-x-1/2 -top-8 w-fit text-xs"
+              className="px-2 py-0.5 whitespace-pre rounded-md bg-black border-neutral-900 text-white absolute left-1/2 -translate-x-1/2 -top-8 w-fit text-xl"
             >
               {title}
             </motion.div>
