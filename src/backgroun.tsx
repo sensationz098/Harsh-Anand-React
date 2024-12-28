@@ -22,8 +22,8 @@ export function BackgroundBeamsDemo() {
           </div>
 
           <div className="flex flex-row w-5/6 justify-center md:justify-start gap-8 sm:gap-12 mt-4">
-            <TailwindcssButtons />
-            <TailwindcssButtons />
+            <TailwindcssButtons link="about" name="About us" />
+            <TailwindcssButtons link="contact" name="Contact us" />
           </div>
         </div>
         {/* Right section (Image slider) */}

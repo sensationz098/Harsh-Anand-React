@@ -1,5 +1,5 @@
 import { cn } from "./../../lib/utils";
-import { IconLayoutNavbarCollapse } from "@tabler/icons-react";
+// import { IconLayoutNavbarCollapse } from "@tabler/icons-react";
 import {
   AnimatePresence,
   MotionValue,
@@ -13,7 +13,7 @@ import { useRef, useState, useCallback } from "react";
 export const FloatingDock = ({
   items,
   desktopClassName,
-  mobileClassName,
+  // mobileClassName,
 }: {
   items: { title: string; icon: React.ReactNode; href: string }[];
   desktopClassName?: string;
@@ -22,61 +22,12 @@ export const FloatingDock = ({
   return (
     <>
       <FloatingDockDesktop items={items} className={desktopClassName} />
-      <FloatingDockMobile items={items} className={mobileClassName} />
+      {/* <FloatingDockMobile items={items} className={mobileClassName} /> */}
     </>
   );
 };
 
-const FloatingDockMobile = ({
-  items,
-  className,
-}: {
-  items: { title: string; icon: React.ReactNode; href: string }[];
-  className?: string;
-}) => {
-  const [open, setOpen] = useState(false);
-  const toggleMenu = useCallback(() => setOpen((prev) => !prev), []);
 
-  return (
-    <div className={cn("relative block md:hidden", className)}>
-      <AnimatePresence>
-        {open && (
-          <motion.div
-            layoutId="nav"
-            className="absolute bottom-full inset-x-0 flex flex-col gap-2"
-          >
-            {items.map((item, idx) => (
-              <motion.div
-                key={item.title}
-                initial={{ opacity: 0, y: 10 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{
-                  opacity: 0,
-                  y: 10,
-                  transition: { delay: idx * 0.05 },
-                }}
-                transition={{ delay: (items.length - 1 - idx) * 0.05 }}
-              >
-                <a
-                  href={item.href}
-                  className="h-10 w-10 rounded-full bg-neutral-900 flex items-center justify-center"
-                >
-                  <div className="h-4 w-4">{item.icon}</div>
-                </a>
-              </motion.div>
-            ))}
-          </motion.div>
-        )}
-      </AnimatePresence>
-      <button
-        onClick={toggleMenu}
-        className="h-10 w-10 rounded-full bg-neutral-800 flex items-center justify-start"
-      >
-        <IconLayoutNavbarCollapse className="h-10 w-10 text-neutral-400" />
-      </button>
-    </div>
-  );
-};
 
 const FloatingDockDesktop = ({
   items,
@@ -98,7 +49,7 @@ const FloatingDockDesktop = ({
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
       className={cn(
-        "mx-auto md:flex-start hidden md:flex h-16 gap-4 items-end rounded-2xl bg-black pb-3",
+        "mx-auto md:flex-start  md:flex flex md:h-16 gap-4 items-end rounded-2xl bg-black pb-3",
         className
       )}
     >
