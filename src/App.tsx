@@ -11,6 +11,7 @@ import { FloatingNav } from "./components/ui/floating-navbar";
 import { data, navItems } from "./constant";
 import { Element } from "react-scroll";
 import { MainFooter } from "./components/ui/MainFooter";
+import { FloatingWhatsApp } from "./components/ui/FloatingWhatsApp";
 // import {Footer} from "./components/ui/footer";
 // import { LinkPreview } from "./components/ui/link-preview";
 
@@ -84,6 +85,14 @@ function App() {
           </div>
         </Element>
       </div>
+      <FloatingWhatsApp
+        phoneNumber="7048998594"
+        accountName="Harsh"
+        allowEsc
+        allowClickAway
+        notification
+        notificationSound
+      />
     </div>
   );
 }
