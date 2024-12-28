@@ -11,8 +11,8 @@ type cardprops =  {
 };
 const Card = ({data}:{data:cardprops}) => {
   return (
-    <div className="relative max-w-sm bg-[#0A0A0A] border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
       <a href={data.link}>
+    <div className="relative max-w-sm bg-[#0A0A0A] border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
      
           <img
             className="rounded-t-lg"
@@ -22,12 +22,11 @@ const Card = ({data}:{data:cardprops}) => {
 
           <ReactLazyLoader image={data.image}/>
         
-        </a>
 
 
       <div className="p-5 flex  justify-center gap-96">
-          <a href={data.link}>
-        <LinkPreview url={data.screenshot}>
+          <a href={data.link} className="z-50">
+        <LinkPreview url={data.link} className="z-10">
           <button
             className="p-[3px] relative"
             onClick={() => (window.location.href = data.link)}
@@ -41,6 +40,7 @@ const Card = ({data}:{data:cardprops}) => {
        </a>
       </div>
     </div>
+              </a>
   );
 };
 

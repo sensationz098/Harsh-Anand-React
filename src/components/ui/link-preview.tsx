@@ -9,6 +9,7 @@ import {
 } from "framer-motion";
 import { cn } from "./../../lib/utils";
 import ReactLazyLoader from "../ReactLazyLoader";
+import { data } from "../../constant";
 
 type LinkPreviewProps = {
   children: React.ReactNode;
@@ -23,6 +24,10 @@ type LinkPreviewProps = {
   | { isStatic?: false; imageSrc?: never }
 );
 
+const getScreenshotByLink = (url:string) => {
+  const item = data.find((u) => u.link === url);
+  return item ? item.screenshot : null; // Returns screenshot if found, or null if not found
+};
 export const LinkPreview = ({
   children,
   url,
@@ -62,6 +67,8 @@ export const LinkPreview = ({
     x.set(offsetFromCenter);
   };
 
+  const ss = getScreenshotByLink(url);
+
   return (
     <>
       {isMounted ? (
@@ -77,7 +84,7 @@ export const LinkPreview = ({
           /> */}
 
           <ReactLazyLoader
-            image={url}
+            image={ss}
             // src={url}
             // width={width}
             // height={height}
@@ -136,7 +143,7 @@ export const LinkPreview = ({
                   style={{ fontSize: 0 }}
                 >
                   <img
-                    src={url}
+                    src={ss}
                     width={width}
                     height={height}
                     quality={quality}

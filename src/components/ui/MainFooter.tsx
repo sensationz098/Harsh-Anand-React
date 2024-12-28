@@ -4,11 +4,11 @@ import { FloatingDockDemo } from "../../float";
 export function MainFooter() {
   return (
     <Footer className="rounded-none bg-black pb-8  shadow-none">
-      <div className="mx-auto w-full max-w-8xl px-4">
+      <div className="mx-auto w-full max-w-8xl  px-4">
         <div className="grid w-full justify-between gap-8 py-16 md:grid-cols-2">
           <div className=" flex flex-col gap-5">
             <h3 className="text-white text-3xl  md:text-5xl md:ml-32 px-8">Get in Touch </h3>
-            <div className="md:ml-32 px-8 flex flex-col justify-center   gap-5">
+            <div className="md:ml-32 md:px-8 md:pl-0 pl-6 flex flex-col justify-center   gap-5">
               <div className="flex items-center gap-2 ">
                 <div>
                   <svg
@@ -79,7 +79,7 @@ export function MainFooter() {
               <FloatingDockDemo/>
             </div>
           </div>
-          <div className="w-full px-20 md:px-40 pt-32 h-full ">
+          <div className="w-full object-cover px-20 md:px-40 pt-32 h-full ">
             <img src="logo.png" alt="" />
           </div>
         </div>
