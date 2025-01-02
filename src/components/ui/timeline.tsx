@@ -49,7 +49,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
 
       <div
         ref={ref}
-        className="relative flex flex-col items-center justify-center md:pl-64 max-w-full  mx-auto pb-20"
+        className="relative flex flex-col items-center justify-center md:pl-64 max-w-full  mx-auto pb-32  "
       >
         {data.map((item, index) => (
           <div
