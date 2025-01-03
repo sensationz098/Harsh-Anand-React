@@ -1,21 +1,19 @@
-import React from "react";
 import { FloatingDock } from "./components/ui/floating-dock";
 import {
   IconBrandInstagram,
   IconBrandX,
   IconBrandLinkedin,
   IconBrandFacebookFilled,
-  IconBrandYoutube,
+  // IconBrandYoutube,
 } from "@tabler/icons-react";
-
 
 export function FloatingDockDemo() {
   const links = [
-    {
-      title: "Youtube",
-      icon: <IconBrandYoutube className="h-full w-full text-neutral-300" />,
-      href: "https://www.youtube.com/@SensationzMediaArtsPvtLtd",
-    },
+    // {
+    //   title: "Youtube",
+    //   icon: <IconBrandYoutube className="h-full w-full text-neutral-300" />,
+    //   href: "https://www.youtube.com/@SensationzMediaArtsPvtLtd",
+    // },
     {
       title: "Facebook",
       icon: (
@@ -33,7 +31,7 @@ export function FloatingDockDemo() {
     {
       title: "Twitter",
       icon: <IconBrandX className="h-full w-full text-neutral-300" />,
-      href: "https://x.com/sensationzmedia?s=09",
+      href: "https://x.com/HarshAnand_",
     },
     {
       title: "Instagram",
