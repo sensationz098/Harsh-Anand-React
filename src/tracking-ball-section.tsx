@@ -11,7 +11,7 @@ export function TimelineDemo() {
             Built and launched Aceternity UI and Aceternity UI Pro from scratch
           </p> */}
           <div className="grid grid-cols-2 w-full gap-4">
-            <div className="bg-[#222121] flex flex-col justify-center items-center md:gap-7 gap-3 md:w-[650px] w-[330px] rounded-lg md:h-64 py-5 md:px-12 md:py-0">
+            <div className="bg-[#222121] flex flex-col justify-center items-center md:gap-7 gap-3 md:w-[650px] w-[300px] rounded-lg md:h-64 py-5 md:px-12 md:py-0">
               <h3 className="text-[#e9a847] font-semibold md:text-[2.5rem] text-[1.4rem] text-center">
                 Venus Records & Tapes Pvt. Ltd.
               </h3>
@@ -33,7 +33,7 @@ export function TimelineDemo() {
             Built and launched Aceternity UI and Aceternity UI Pro from scratch
           </p> */}
           <div className="grid grid-cols-2 gap-4">
-            <div className="bg-[#222121] flex flex-col justify-center items-center md:gap-7 gap-3 md:w-[650px] w-[330px] rounded-lg md:h-64 py-5 md:px-12 md:py-0">
+            <div className="bg-[#222121] flex flex-col justify-center items-center md:gap-7 gap-3 md:w-[650px] w-[300px] rounded-lg md:h-64 py-5 md:px-12 md:py-0">
               <h3 className="text-[#e9a847] font-semibold md:text-[2.5rem]  text-[1.4rem] text-center">
                 Balaji Telefilms Pvt. Ltd.
               </h3>
@@ -55,7 +55,7 @@ export function TimelineDemo() {
             Built and launched Aceternity UI and Aceternity UI Pro from scratch
           </p> */}
           <div className="grid grid-cols-2 gap-4">
-            <div className="bg-[#222121] flex flex-col justify-center items-center md:gap-7 gap-3 md:w-[650px] w-[330px] rounded-lg md:h-64 py-5 md:px-12 md:py-0">
+            <div className="bg-[#222121] flex flex-col justify-center items-center md:gap-7 gap-3 md:w-[650px] w-[300px] rounded-lg md:h-64 py-5 md:px-12 md:py-0">
               <h3 className="text-[#e9a847] font-semibold md:text-[2.5rem]  text-[1.4rem] text-center">
                 Jai Mehta Productions
               </h3>
@@ -77,7 +77,7 @@ export function TimelineDemo() {
             Built and launched Aceternity UI and Aceternity UI Pro from scratch
           </p> */}
           <div className="grid grid-cols-2 gap-4">
-            <div className="bg-[#222121] flex flex-col justify-center items-center md:gap-7 gap-3 md:w-[650px] w-[330px] rounded-lg md:h-64 py-5 md:px-12 md:py-0">
+            <div className="bg-[#222121] flex flex-col justify-center items-center md:gap-7 gap-3 md:w-[650px] w-[300px] rounded-lg md:h-64 py-5 md:px-12 md:py-0">
               <h3 className="text-[#e9a847] font-semibold md:text-[2.5rem]  text-[1.4rem] text-center">
                 Sensationz Media & Arts Pvt. Ltd.
               </h3>
@@ -99,7 +99,7 @@ export function TimelineDemo() {
             Built and launched Aceternity UI and Aceternity UI Pro from scratch
           </p> */}
           <div className="grid grid-cols-2 gap-4">
-            <div className="bg-[#222121] flex flex-col justify-center items-center md:gap-7 gap-3 md:w-[650px] w-[330px] rounded-lg md:h-64 py-5 md:px-12 md:py-0">
+            <div className="bg-[#222121] flex flex-col justify-center items-center md:gap-7 gap-3 md:w-[650px] w-[300px] rounded-lg md:h-64 py-5 md:px-12 md:py-0">
               <h3 className="text-[#e9a847] font-semibold md:text-[2.5rem]  text-[1.4rem] text-center">
                 Short Films
               </h3>
@@ -124,7 +124,7 @@ export function TimelineDemo() {
             Built and launched Aceternity UI and Aceternity UI Pro from scratch
           </p> */}
           <div className="grid grid-cols-2 gap-4">
-            <div className="bg-[#222121] flex flex-col justify-center items-center md:gap-7 gap-3 md:w-[650px] w-[330px] rounded-lg md:h-64 py-5 md:px-12 md:py-0">
+            <div className="bg-[#222121] flex flex-col justify-center items-center md:gap-7 gap-3 md:w-[650px] w-[300px] rounded-lg md:h-64 py-5 md:px-12 md:py-0">
               <h3 className="text-[#e9a847] font-semibold md:text-[2.5rem]  text-[1.4rem] text-center">
                 Festive Circuit
               </h3>
@@ -147,7 +147,7 @@ export function TimelineDemo() {
             Built and launched Aceternity UI and Aceternity UI Pro from scratch
           </p> */}
           <div className="grid grid-cols-2 gap-4">
-            <div className="bg-[#222121] flex flex-col justify-center items-center md:gap-7 gap-3 md:w-[650px] w-[330px] rounded-lg md:h-64 py-5 md:px-12 md:py-0">
+            <div className="bg-[#222121] flex flex-col justify-center items-center md:gap-7 gap-3 md:w-[650px] w-[300px] rounded-lg md:h-64 py-5 md:px-12 md:py-0">
               <h3 className="text-[#e9a847] font-semibold md:text-[2.5rem]  text-[1.4rem] text-center">
                 Best Debut Directed Award
               </h3>
@@ -173,7 +173,7 @@ export function TimelineDemo() {
             Built and launched Aceternity UI and Aceternity UI Pro from scratch
           </p> */}
           <div className="grid grid-cols-2 gap-4">
-            <div className="bg-[#222121] flex flex-col justify-center items-center md:gap-7 gap-3 md:w-[650px] w-[330px] rounded-lg md:h-64 py-5 md:px-12 md:py-0">
+            <div className="bg-[#222121] flex flex-col justify-center items-center md:gap-7 gap-3 md:w-[650px] w-[300px] rounded-lg md:h-64 py-5 md:px-12 md:py-0">
               <h3 className="text-[#e9a847] font-semibold md:text-[2.5rem]  text-[1.4rem] text-center">
                 International Spiritual Film
               </h3>
@@ -198,7 +198,7 @@ export function TimelineDemo() {
             Built and launched Aceternity UI and Aceternity UI Pro from scratch
           </p> */}
           <div className="grid grid-cols-2 gap-4">
-            <div className="bg-[#222121] flex flex-col justify-center items-center md:gap-7 gap-3 md:w-[650px] w-[330px] rounded-lg md:h-64 py-5 md:px-12 md:py-0">
+            <div className="bg-[#222121] flex flex-col justify-center items-center md:gap-7 gap-3 md:w-[650px] w-[300px] rounded-lg md:h-64 py-5 md:px-12 md:py-0">
               <h3 className="text-[#e9a847] font-semibold md:text-[2.5rem]  text-[1.4rem] text-center">
                 Directed Bhojpuri film
               </h3>
@@ -227,7 +227,7 @@ export function TimelineDemo() {
             Built and launched Aceternity UI and Aceternity UI Pro from scratch
           </p> */}
           <div className="grid grid-cols-2 gap-4">
-            <div className="bg-[#222121] flex flex-col justify-center items-center md:gap-7 gap-3 md:w-[650px] w-[330px] rounded-lg md:h-64 py-5 md:px-12 md:py-0">
+            <div className="bg-[#222121] flex flex-col justify-center items-center md:gap-7 gap-3 md:w-[650px] w-[300px] rounded-lg md:h-64 py-5 md:px-12 md:py-0">
               <h3 className="text-[#e9a847] font-semibold md:text-[2.5rem]  text-[1.4rem] text-center">
                 Working on a Film
               </h3>
