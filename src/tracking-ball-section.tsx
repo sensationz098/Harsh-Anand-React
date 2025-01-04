@@ -11,7 +11,7 @@ export function TimelineDemo() {
             Built and launched Aceternity UI and Aceternity UI Pro from scratch
           </p> */}
           <div className="grid grid-cols-2 w-full gap-4">
-            <div className="bg-[#222121] flex flex-col justify-center items-center md:gap-7 gap-3 md:w-[650px] w-[300px] rounded-lg md:h-64 py-5 md:px-12 md:py-0">
+            <div className="bg-[#222121] flex flex-col justify-center items-center md:gap-7 gap-3 md:w-[650px] w-[250px]  rounded-lg md:h-64 py-5 md:px-12 md:py-0">
               <h3 className="text-[#e9a847] font-semibold md:text-[2.5rem] text-[1.4rem] text-center">
                 Venus Records & Tapes Pvt. Ltd.
               </h3>
@@ -33,7 +33,7 @@ export function TimelineDemo() {
             Built and launched Aceternity UI and Aceternity UI Pro from scratch
           </p> */}
           <div className="grid grid-cols-2 gap-4">
-            <div className="bg-[#222121] flex flex-col justify-center items-center md:gap-7 gap-3 md:w-[650px] w-[300px] rounded-lg md:h-64 py-5 md:px-12 md:py-0">
+            <div className="bg-[#222121] flex flex-col justify-center items-center md:gap-7 gap-3 md:w-[650px] w-[250px] rounded-lg md:h-64 py-5 md:px-12 md:py-0">
               <h3 className="text-[#e9a847] font-semibold md:text-[2.5rem]  text-[1.4rem] text-center">
                 Balaji Telefilms Pvt. Ltd.
               </h3>
@@ -55,7 +55,7 @@ export function TimelineDemo() {
             Built and launched Aceternity UI and Aceternity UI Pro from scratch
           </p> */}
           <div className="grid grid-cols-2 gap-4">
-            <div className="bg-[#222121] flex flex-col justify-center items-center md:gap-7 gap-3 md:w-[650px] w-[300px] rounded-lg md:h-64 py-5 md:px-12 md:py-0">
+            <div className="bg-[#222121] flex flex-col justify-center items-center md:gap-7 gap-3 md:w-[650px] w-[250px] rounded-lg md:h-64 py-5 md:px-12 md:py-0">
               <h3 className="text-[#e9a847] font-semibold md:text-[2.5rem]  text-[1.4rem] text-center">
                 Jai Mehta Productions
               </h3>
@@ -77,7 +77,7 @@ export function TimelineDemo() {
             Built and launched Aceternity UI and Aceternity UI Pro from scratch
           </p> */}
           <div className="grid grid-cols-2 gap-4">
-            <div className="bg-[#222121] flex flex-col justify-center items-center md:gap-7 gap-3 md:w-[650px] w-[300px] rounded-lg md:h-64 py-5 md:px-12 md:py-0">
+            <div className="bg-[#222121] flex flex-col justify-center items-center md:gap-7 gap-3 md:w-[650px] w-[250px] rounded-lg md:h-64 py-5 md:px-12 md:py-0">
               <h3 className="text-[#e9a847] font-semibold md:text-[2.5rem]  text-[1.4rem] text-center">
                 Sensationz Media & Arts Pvt. Ltd.
               </h3>
@@ -99,7 +99,7 @@ export function TimelineDemo() {
             Built and launched Aceternity UI and Aceternity UI Pro from scratch
           </p> */}
           <div className="grid grid-cols-2 gap-4">
-            <div className="bg-[#222121] flex flex-col justify-center items-center md:gap-7 gap-3 md:w-[650px] w-[300px] rounded-lg md:h-64 py-5 md:px-12 md:py-0">
+            <div className="bg-[#222121] flex flex-col justify-center items-center md:gap-7 gap-3 md:w-[650px] w-[250px] rounded-lg md:h-64 py-5 md:px-12 md:py-0">
               <h3 className="text-[#e9a847] font-semibold md:text-[2.5rem]  text-[1.4rem] text-center">
                 Short Films
               </h3>
@@ -124,7 +124,7 @@ export function TimelineDemo() {
             Built and launched Aceternity UI and Aceternity UI Pro from scratch
           </p> */}
           <div className="grid grid-cols-2 gap-4">
-            <div className="bg-[#222121] flex flex-col justify-center items-center md:gap-7 gap-3 md:w-[650px] w-[300px] rounded-lg md:h-64 py-5 md:px-12 md:py-0">
+            <div className="bg-[#222121] flex flex-col justify-center items-center md:gap-7 gap-3 md:w-[650px] w-[250px] rounded-lg md:h-64 py-5 md:px-12 md:py-0">
               <h3 className="text-[#e9a847] font-semibold md:text-[2.5rem]  text-[1.4rem] text-center">
                 Festive Circuit
               </h3>
@@ -147,16 +147,14 @@ export function TimelineDemo() {
             Built and launched Aceternity UI and Aceternity UI Pro from scratch
           </p> */}
           <div className="grid grid-cols-2 gap-4">
-            <div className="bg-[#222121] flex flex-col justify-center items-center md:gap-7 gap-3 md:w-[650px] w-[300px] rounded-lg md:h-64 py-5 md:px-12 md:py-0">
+            <div className="bg-[#222121] flex flex-col justify-center items-center md:gap-7 gap-3 md:w-[650px] w-[250px] rounded-lg md:h-64 py-5 md:px-12 md:py-0">
               <h3 className="text-[#e9a847] font-semibold md:text-[2.5rem]  text-[1.4rem] text-center">
                 Best Debut Directed Award
               </h3>
               <p className="text-neutral-200  md:text-[1.2rem] text-[0.8rem] text-center md:text-start">
-                Directed Bhojpuri feature film "Love aur Rajneeti" with Ravi
-                Kishan & Anjana Singh, release on 8th January 2016. <br />{" "}
-                <br />
-                Got Best Debut Directed Award and the films is in Top Ten Box
-                Office collection in films of 2016 in Bhojpuri.
+                Directed Love aur Rajneeti (2016), starring Ravi Kishan and
+                Anjana Singh; a top 2016 Bhojpuri hit and Best Debut Director
+                award winner.
               </p>
             </div>
           </div>
@@ -173,15 +171,14 @@ export function TimelineDemo() {
             Built and launched Aceternity UI and Aceternity UI Pro from scratch
           </p> */}
           <div className="grid grid-cols-2 gap-4">
-            <div className="bg-[#222121] flex flex-col justify-center items-center md:gap-7 gap-3 md:w-[650px] w-[300px] rounded-lg md:h-64 py-5 md:px-12 md:py-0">
+            <div className="bg-[#222121] flex flex-col justify-center items-center md:gap-7 gap-3 md:w-[650px] w-[250px] rounded-lg md:h-64 py-5 md:px-12 md:py-0">
               <h3 className="text-[#e9a847] font-semibold md:text-[2.5rem]  text-[1.4rem] text-center">
                 International Spiritual Film
               </h3>
               <p className="text-neutral-200  md:text-[1.2rem] text-[0.8rem]  text-center">
                 The film "Who Am I?", based on Yogi Protoplasm's teachings, was
-                selected for the International Spiritual Film Festival in
-                Ujjain, one of 12 films chosen from 100 globally. The jury
-                included Mr. Ketan Mehta.
+                selected for the International Spiritual Film Festival in Ujjain
+                from 100 global entries. The jury included Mr. Ketan Mehta.
               </p>
             </div>
           </div>
@@ -198,18 +195,15 @@ export function TimelineDemo() {
             Built and launched Aceternity UI and Aceternity UI Pro from scratch
           </p> */}
           <div className="grid grid-cols-2 gap-4">
-            <div className="bg-[#222121] flex flex-col justify-center items-center md:gap-7 gap-3 md:w-[650px] w-[300px] rounded-lg md:h-64 py-5 md:px-12 md:py-0">
+            <div className="bg-[#222121] flex flex-col justify-center items-center md:gap-7 gap-3 md:w-[650px] w-[250px] rounded-lg md:h-64 py-5 md:px-12 md:py-0">
               <h3 className="text-[#e9a847] font-semibold md:text-[2.5rem]  text-[1.4rem] text-center">
                 Directed Bhojpuri film
               </h3>
               <div className="flex flex-col gap-4">
                 <p className="text-neutral-200  md:text-[1.2rem] text-[0.8rem]  text-center md:text-start">
-                  Directed Bhojpuri film "Khao Pio Mast Raho" with Ravi Kishan &
-                  Komal Thacker, to be release this year.{" "}
-                </p>
-
-                <p className="text-neutral-200  md:text-[1.2rem] text-[0.8rem]  text-center md:text-start ">
-                  Directed an Ad film for a cosmetic brand "Marlin".
+                  Directed the Bhojpuri film Khao Pio Mast Raho with Ravi Kishan
+                  and Komal Thacker, set to release this year, and an ad film
+                  for the cosmetic brand Marlin.
                 </p>
               </div>
             </div>
@@ -227,7 +221,7 @@ export function TimelineDemo() {
             Built and launched Aceternity UI and Aceternity UI Pro from scratch
           </p> */}
           <div className="grid grid-cols-2 gap-4">
-            <div className="bg-[#222121] flex flex-col justify-center items-center md:gap-7 gap-3 md:w-[650px] w-[300px] rounded-lg md:h-64 py-5 md:px-12 md:py-0">
+            <div className="bg-[#222121] flex flex-col justify-center items-center md:gap-7 gap-3 md:w-[650px] w-[250px] rounded-lg md:h-64 py-5 md:px-12 md:py-0">
               <h3 className="text-[#e9a847] font-semibold md:text-[2.5rem]  text-[1.4rem] text-center">
                 Working on a Film
               </h3>
