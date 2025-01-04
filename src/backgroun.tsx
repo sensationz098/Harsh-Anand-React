@@ -12,8 +12,8 @@ export function BackgroundBeamsDemo() {
             I am Harsh Anand
           </h1>
           <div className="flex flex-col w-5/6 gap-3">
-            <p className="font-bold text-4xl sm:text-5xl text-center md:text-left w-full md:text-6xl text-[#B38E58]">
-              A Film Director, Producer & <br /> Entrepreneur
+            <p className="font-bold text-2xl text-center md:text-left w-full md:text-6xl text-[#B38E58]">
+              A Film Director, Producer <br /> & Entrepreneur
             </p>
 
             <p className="text-xl sm:text-2xl md:text-3xl text-white text-center md:text-left ">
