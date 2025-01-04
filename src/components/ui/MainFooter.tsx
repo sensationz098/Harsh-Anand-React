@@ -94,7 +94,7 @@ export function MainFooter() {
         <Footer.Divider />
 
         <div className="text-white w-full flex justify-center items-center">
-          <h4>
+          <h4 className="text-xs md:text-xl">
             © 2024 Created by{" "}
             <a
               href="https://sensationzperformingarts.com/"

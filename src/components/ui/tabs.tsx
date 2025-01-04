@@ -40,7 +40,7 @@ export const Tabs = ({
   return (
     <>
       <div className="max-w-7xl mx-auto my-28 px-4 md:px-8 lg:px-10">
-        <h2 className="text-4xl md:text-6xl mb-4 text-white max-w-full text-center">
+        <h2 className="text-3xl sm:text-4xl md:text-6xl mb-4 text-white max-w-full text-center">
           Some of My Work
         </h2>
         <p className="text-neutral-300 text-1xl text-center md:text-base max-w-full">
@@ -81,7 +81,7 @@ export const Tabs = ({
               />
             )}
 
-            <span className="relative justify-center items-center text-[#B38E58] md:flex font-semibold text-sm md:text-xl  ">
+            <span className="relative justify-center items-center text-[#B38E58] md:flex font-semibold text-[0.7rem] sm:text-sm md:text-xl  ">
               {tab.title}
             </span>
           </button>
