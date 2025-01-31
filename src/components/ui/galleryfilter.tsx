@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { Menu, MenuItem } from "../../constant";
-import { Link as ReactLink} from "react-router-dom";
-
+import { Link as ReactLink } from "react-router-dom";
 
 interface GalleryReactProps {
   category1: string;
@@ -13,7 +12,7 @@ const GalleryReact: React.FC<GalleryReactProps> = ({ category1 }) => {
 
   useEffect(() => {
     if (category1 === "All") {
-      const ab=Menu.slice(1,8);
+      const ab = Menu.slice(1, 9);
       console.log(ab);
       setItems(ab);
     } else {
@@ -34,14 +33,13 @@ const GalleryReact: React.FC<GalleryReactProps> = ({ category1 }) => {
             <div className="flex justify-center">
               <div className="col-md-5">
                 {/* Use LazyLoadImage for optimized image loading */}
-            <ReactLink to={`/${item.id}`}>
-
-                <LazyLoadImage
-                  src={item.image}
-                  alt={item.category1}
-                  className="img-fluid rounded-2xl"
+                <ReactLink to={`/${item.id}`}>
+                  <LazyLoadImage
+                    src={item.image}
+                    alt={item.category1}
+                    className="img-fluid rounded-2xl object-cover w-80 h-52"
                   />
-                  </ReactLink>
+                </ReactLink>
               </div>
             </div>
           </div>

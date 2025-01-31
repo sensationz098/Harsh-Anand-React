@@ -76,7 +76,9 @@ export function MainFooter() {
                   </svg>
                 </div>
                 <div className="text-white text-xs md:text-2xl">
-                  (+91) 9871303310
+                  (+91) 8800348485
+                  <br />
+                  (+91) 9218071387
                 </div>
               </div>
             </div>

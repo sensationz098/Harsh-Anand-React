@@ -86,8 +86,18 @@ export const Menu: MenuItem[] = [
     content:
       "I have directed documentaries for CORD, including Bal Vihar, Disability, Social Injustice, and Changing Women Lives. Each project focuses on raising awareness about social challenges and the power of community-driven change. My goal is to spotlight inspiring stories that drive meaningful impact.",
   },
+
   {
     id: 7,
+    image: "media4.png",
+    category1: "Media",
+    gallery: ["media.png", "media2.png", "media3.png", "media4.png"],
+    heading: "Media Coverage",
+    content:
+      "My work has received recognition across various media platforms, with features and reviews highlighting the impact and relevance of my projects. It’s rewarding to see how my storytelling resonates with both audiences and critics.",
+  },
+  {
+    id: 8,
     image: "movie1.jpg",
     category1: "Movies",
     gallery: ["movie1.jpg"],

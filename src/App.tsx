@@ -91,7 +91,7 @@ function App() {
         </div>
       </div>
       <FloatingWhatsApp
-        phoneNumber="9871303310"
+        phoneNumber="8800348485"
         accountName="Harsh"
         allowEsc
         allowClickAway
