@@ -89,9 +89,9 @@ export const Menu: MenuItem[] = [
 
   {
     id: 7,
-    image: "media4.png",
+    image: "media.png",
     category1: "Media",
-    gallery: ["media.png", "media2.png", "media3.png", "media4.png"],
+    gallery: ["media.png"],
     heading: "Media Coverage",
     content:
       "My work has received recognition across various media platforms, with features and reviews highlighting the impact and relevance of my projects. It’s rewarding to see how my storytelling resonates with both audiences and critics.",
@@ -100,10 +100,19 @@ export const Menu: MenuItem[] = [
     id: 8,
     image: "movie1.jpg",
     category1: "Movies",
-    gallery: ["movie1.jpg"],
+    gallery: ["movie1.jpg", "movienew.png"],
     heading: "Movies Directed by Me",
     content:
       "I directed the feature film Love and Rajniti starring Ravi Kishan. My work focuses on blending powerful storytelling with complex emotions and real-world themes. I strive to create impactful cinema that resonates with audiences on multiple levels.",
+  },
+  {
+    id: 9,
+    image: "award.png",
+    category1: "Awards",
+    gallery: ["award.png", "award1.png"],
+    heading: "Awards and Recognition",
+    content:
+      "I’m grateful for the awards my work has received, recognizing the dedication and passion behind each project. These accolades motivate me to keep creating impactful and meaningful stories.",
   },
 ];
 
