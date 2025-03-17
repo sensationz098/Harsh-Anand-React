@@ -27,7 +27,8 @@ const Card = React.memo(
             "blur-sm scale-[0.98] opacity-100"
         )}
       >
-        <ReactLazyLoader image={card.src} />
+        <img src={card.src} alt="" loading="lazy" />
+        {/* <ReactLazyLoader image={card.src} /> */}
         <div
           className={cn(
             "absolute inset-0 bg-black/50 flex items-end py-8 px-4 transition-opacity duration-300",

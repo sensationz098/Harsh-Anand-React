@@ -1,5 +1,3 @@
-
-
 import React from "react";
 import { ParallaxBanner, BannerLayer } from "react-scroll-parallax";
 

@@ -4,9 +4,12 @@ import { motion } from "framer-motion";
 import { ImagesSlider } from "./components/ui/images-slider";
 
 export function ImagesSliderDemo() {
-  const images = ["pic-2.png", "pic1-1.png", "pic1.png"];
+  const images = ["pic-2.webp", "pic1-1.webp", "pic1.webp"];
   return (
-    <ImagesSlider className="md:h-[400px] md:w-96 md:mt-0 mt-10 h-64 w-56 z-50" images={images}>
+    <ImagesSlider
+      className="md:h-[400px] md:w-96 md:mt-0 mt-10 h-64 w-56 z-50"
+      images={images}
+    >
       <motion.div
         initial={{
           opacity: 0,
@@ -20,11 +23,7 @@ export function ImagesSliderDemo() {
           duration: 0.6,
         }}
         className="z-50 flex flex-col justify-center items-center"
-      >
-        
-       
-        
-      </motion.div>
+      ></motion.div>
     </ImagesSlider>
   );
 }

@@ -81,14 +81,13 @@ export const Tabs = ({
               />
             )}
 
-            <span className="relative justify-center items-center text-[#B38E58] md:flex font-semibold text-[0.7rem] sm:text-sm md:text-xl  ">
+            <span className="relative justify-center items-center text-[#B38E58] md:flex font-semibold text-[0.7rem] sm:text-sm md:text-xs  ">
               {tab.title}
             </span>
           </button>
-          
         ))}
       </div>
-      
+
       {/* Pass the correct category prop to GalleryReact */}
       <GalleryReact category1={active.value} />
       <FadeInDiv
@@ -97,11 +96,8 @@ export const Tabs = ({
         hovering={hovering}
         className={cn("mt-32 text-cyan-800", contentClassName)}
       />
-      
     </>
-    
   );
- 
 };
 
 export const FadeInDiv = ({
@@ -134,9 +130,7 @@ export const FadeInDiv = ({
             y: isActive(tab) ? [0, 40, 0] : 0,
           }}
           className={cn("w-full h-full absolute top-0 left-0", className)}
-        >
-          
-        </motion.div>
+        ></motion.div>
       ))}
     </div>
   );

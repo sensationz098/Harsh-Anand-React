@@ -24,7 +24,7 @@ type LinkPreviewProps = {
   | { isStatic?: false; imageSrc?: never }
 );
 
-const getScreenshotByLink = (url:string) => {
+const getScreenshotByLink = (url: string) => {
   const item = data.find((u) => u.link === url);
   return item ? item.screenshot : null; // Returns screenshot if found, or null if not found
 };
@@ -34,19 +34,7 @@ export const LinkPreview = ({
   className,
   width = 200,
   height = 125,
-  quality = 50,
-  layout = "fixed",
-  // isStatic = false,
-  // imageSrc = "",
 }: LinkPreviewProps) => {
-  // let src;
-  // if (!isStatic) {
-   
-  //   src = {url};
-  // } else {
-  //   src = imageSrc;
-  // }
-
   const [isOpen, setOpen] = React.useState(false);
 
   const [isMounted, setIsMounted] = React.useState(false);
@@ -73,26 +61,7 @@ export const LinkPreview = ({
     <>
       {isMounted ? (
         <div className="hidden">
-          {/* <img
-            src={url}
-            width={width}
-            height={height}
-            quality={quality}
-            layout={layout}
-            priority={true}
-            alt="hidden image"
-          /> */}
-
-          <ReactLazyLoader
-            image={ss}
-            // src={url}
-            // width={width}
-            // height={height}
-            // quality={quality}
-            // layout={layout}
-            // priority={true}
-            // alt="hidden image"
-          />
+          <ReactLazyLoader image={ss!} />
         </div>
       ) : null}
 
@@ -143,12 +112,9 @@ export const LinkPreview = ({
                   style={{ fontSize: 0 }}
                 >
                   <img
-                    src={ss}
+                    src={ss!}
                     width={width}
                     height={height}
-                    quality={quality}
-                    layout={layout}
-                    priority={true}
                     className="rounded-lg"
                     alt="preview image"
                   />

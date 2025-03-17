@@ -1,4 +1,3 @@
-
 import { IconArrowLeft, IconArrowRight } from "@tabler/icons-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useEffect, useState } from "react";
@@ -9,6 +8,7 @@ type Testimonial = {
   designation: string;
   src: string;
 };
+
 export const AnimatedTestimonials = ({
   testimonials,
   autoplay = false,
@@ -17,6 +17,9 @@ export const AnimatedTestimonials = ({
   autoplay?: boolean;
 }) => {
   const [active, setActive] = useState(0);
+  const [rendered, setRendered] = useState<boolean[]>(
+    new Array(testimonials.length).fill(false)
+  );
 
   const handleNext = () => {
     setActive((prev) => (prev + 1) % testimonials.length);
@@ -40,11 +43,21 @@ export const AnimatedTestimonials = ({
   const randomRotateY = () => {
     return Math.floor(Math.random() * 21) - 10;
   };
+
+  // Update the rendered state when a new testimonial becomes active
+  useEffect(() => {
+    setRendered((prev) => {
+      const updated = [...prev];
+      updated[active] = true; // Mark the active testimonial as rendered
+      return updated;
+    });
+  }, [active]);
+
   return (
-    <div className="max-w-full  md:max-w-full md:px-8 lg:px-12  mx-auto antialiased font-sans px-4 py-20">
+    <div className="max-w-full md:max-w-full md:px-8 lg:px-12 mx-auto antialiased font-sans px-4 py-20">
       <div className="relative grid grid-cols-1 md:grid-cols-2 gap-20">
         <div>
-          <div className="relative md:size-11/12  object-contain h-96 md:h-[650px] ">
+          <div className="relative md:size-11/12 object-contain h-96 md:h-[650px]">
             <AnimatePresence>
               {testimonials.map((testimonial, index) => (
                 <motion.div
@@ -75,7 +88,7 @@ export const AnimatedTestimonials = ({
                     duration: 0.4,
                     ease: "easeInOut",
                   }}
-                  className="absolute  origin-bottom"
+                  className="absolute origin-bottom"
                 >
                   <img
                     src={testimonial.src}
@@ -83,14 +96,14 @@ export const AnimatedTestimonials = ({
                     width={500}
                     height={500}
                     draggable={false}
-                    className="size-11/12  rounded-3xl object-cover object-center"
+                    className="size-11/12 rounded-3xl object-cover object-center"
                   />
                 </motion.div>
               ))}
             </AnimatePresence>
           </div>
         </div>
-        <div className="flex justify-center  flex-col-reverse md:flex-col md:py-12 md:gap-10">
+        <div className="flex justify-center flex-col-reverse md:flex-col md:py-12 md:gap-10">
           <motion.div
             key={active}
             initial={{
@@ -110,9 +123,8 @@ export const AnimatedTestimonials = ({
               ease: "easeInOut",
             }}
           >
-            <h3 className="md:text-5xl text-3xl font-bold text-center text-white ">
-              {/* {testimonials[active].name} */}
-              Harsh Anand
+            <h3 className="md:text-5xl text-3xl font-bold text-center text-white">
+              {testimonials[active].name}
             </h3>
 
             <motion.p className="md:text-2xl text-xs mt-2 md:mt-8 text-center text-neutral-300">
@@ -120,13 +132,13 @@ export const AnimatedTestimonials = ({
                 <motion.span
                   key={index}
                   initial={{
-                    filter: "blur(10px)",
-                    opacity: 0,
+                    filter: rendered[active] ? "none" : "blur(10px)",
+                    opacity: rendered[active] ? 1 : 0,
                     y: 5,
                   }}
                   animate={{
-                    filter: "blur(0px)",
-                    opacity: 1,
+                    filter: rendered[active] ? "none" : "blur(0px)",
+                    opacity: rendered[active] ? 1 : 0,
                     y: 0,
                   }}
                   transition={{

@@ -89,7 +89,7 @@ export function MainFooter() {
           </div>
           <div className="w-full object-cover px-20 md:px-40 md:pt-32 h-full ">
             <a href="/">
-              <img src="logo.png" alt="" />
+              <img src="logo.webp" alt="" />
             </a>
           </div>
         </div>

@@ -4,51 +4,51 @@ export function FocusCardsDemo() {
   const cards = [
     {
       title: "Forest Adventure",
-      src: "new-2.png",
+      src: "new-2.webp",
     },
     {
       title: "Valley of life",
-      src: "new-3.png",
+      src: "new-3.webp",
     },
     {
       title: "Sala behta hi jayega",
-      src: "new-4.png",
+      src: "new-4.webp",
     },
     {
       title: "Camping is for pros",
-      src: "new-5.png",
+      src: "new-5.webp",
     },
     {
       title: "The road not taken",
-      src: "new-6.png",
+      src: "new-6.webp",
     },
     {
       title: "The First Rule",
-      src: "new-7.png",
+      src: "new-7.webp",
     },
     {
       title: "The First Rule",
-      src: "new-8.png",
+      src: "new-8.webp",
     },
     {
       title: "The First Rule",
-      src: "new-9.png",
+      src: "new-9.webp",
     },
     {
       title: "The First Rule",
-      src: "new-10.png",
+      src: "new-10.webp",
     },
     {
       title: "The First Rule",
-      src: "new-11.png",
+      src: "new-11.webp",
     },
     {
       title: "The First Rule",
-      src: "new-12.png",
+      src: "new-12.webp",
     },
     {
       title: "The First Rule",
-      src: "new-13.png",
+      src: "new-13.webp",
     },
   ];
 

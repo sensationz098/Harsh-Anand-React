@@ -9,8 +9,8 @@ import { reducer } from "./../../reducer";
 import { WhatsappSVG, CloseSVG, CheckSVG, SendSVG } from "./Icons";
 import css from "./../../styles.module.css";
 
-// import darkBG from "./assets/bg-chat-tile-light.png";
-// import lightBG from "./assets/bg-chat-tile-dark.png";
+// import darkBG from "./assets/bg-chat-tile-light.webp";
+// import lightBG from "./assets/bg-chat-tile-dark.webp";
 // import dummyAvatar from "./assets/uifaces-avatar.jpg";
 // import SoundBeep from "./assets/whatsapp-notification.mp3";
 
@@ -278,7 +278,7 @@ export function FloatingWhatsApp({
           className={css.chatBody}
           style={{
             backgroundImage: `url(${
-              darkMode ? "bg-chat-tile-light.png" : "bg-chat-tile-dark.png"
+              darkMode ? "bg-chat-tile-light.webp" : "bg-chat-tile-dark.webp"
             })`,
           }}
         >
