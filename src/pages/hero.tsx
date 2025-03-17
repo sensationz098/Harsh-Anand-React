@@ -35,13 +35,12 @@ function HeroSectio() {
 
   return (
     <div className="w-full h-full">
-      <RootLayout>
-        <div className="w-full h-6 bg-black z-20 px-6 mx-auto">
-          <ParallaxProvider>
-            <HeroSection user={user} />
-          </ParallaxProvider>
-        </div>
-      </RootLayout>
+      <div className="w-full h-6 bg-black z-20 mx-auto">
+        <ParallaxProvider>
+          <HeroSection user={user} />
+        </ParallaxProvider>
+      </div>
+
       <div className="w-10/12 mx-auto">
         {/* Use conditional rendering properly */}
         <ModalGateway>
@@ -58,9 +57,9 @@ function HeroSectio() {
         </ModalGateway>
       </div>
       <div className="mt-[200px] md:mt-[800px] mx-auto px-7 w-full h-auto gap-4">
-        <div className="flex justify-center">
-          <div className="h-52 w-96 my-auto object-cover md:block hidden">
-            <img src="Face.webp" alt="Profile" />
+        <div className="flex justify-center  mx-auto ">
+          <div className="h-52 mx-auto w-96 my-auto object-cover md:block hidden">
+            <img src="Face.webp" alt="Profile" className="mx-auto" />
           </div>
 
           <div className="flex flex-col justify-around items-center">
@@ -82,39 +81,42 @@ function HeroSectio() {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 md:mt-4 mt-10 grid-rows-2 gap-10 w-full">
+        <div className="grid grid-cols-1 md:grid-cols-2 justify-center content-stretch mx-auto md:mt-4 mt-10 grid-rows-2 gap-10 w-full">
           {filteredGallery.map((item, index) => (
-            <div className="flex justify-center" key={index}>
+            <div
+              className="flex justify-center items-center w-full mx-auto "
+              key={index}
+            >
               {category1 === "Media" ? (
-                <div className="flex w-[2000px] gap-20 ml-40  ">
+                <div className="flex flex-col md:flex-row w-full mx-auto justify-center items-center  gap-20   ">
                   <img
                     src={item}
                     alt={item}
-                    className="img-fluid h-60 w-[500px] object-cover rounded-2xl"
+                    className="img-fluid h-60 w-[500px] object-cover rounded-2xl  mx-auto "
                     loading="lazy"
                   />
 
-                  <div className="h-60 w-[500px] object-cover rounded-2xl">
-                    <iframe
-                      src="https://www.youtube.com/embed/UgRdCkddDc8?si=EXO9LBCLMmW7kHfg"
-                      title="YouTube video player"
-                      frameBorder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                      referrerPolicy="strict-origin-when-cross-origin"
-                      allowFullScreen
-                      className="img-fluid h-60 w-[500px] object-cover rounded-2xl"
-                    ></iframe>
-                  </div>
+                  {/* <div className="h-60 w-[250px] md:w-[500px] object-cover rounded-2xl"> */}
+                  <iframe
+                    src="https://www.youtube.com/embed/UgRdCkddDc8?si=EXO9LBCLMmW7kHfg"
+                    title="YouTube video player"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerPolicy="strict-origin-when-cross-origin"
+                    allowFullScreen
+                    className="img-fluid h-60 w-[370px] md:w-[500px] object-cover rounded-2xl"
+                  ></iframe>
+                  {/* </div> */}
                 </div>
               ) : (
                 <button
                   onClick={() => openLightbox(index)}
-                  className="w-full cursor-pointer" // Ensure button takes full width for easy interaction
+                  className="w-full cursor-pointer mx-auto" // Ensure button takes full width for easy interaction
                 >
                   <img
                     src={item}
                     alt={item}
-                    className="img-fluid h-60 w-[500px] object-cover rounded-2xl"
+                    className="img-fluid h-60 w-[500px] object-cover mx-auto rounded-2xl"
                     loading="lazy"
                   />
                 </button>
